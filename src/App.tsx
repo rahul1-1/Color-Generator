@@ -46,7 +46,7 @@ function App() {
          <input
           type='number'
           value={cnt}
-          onChange={(e:React.ChangeEvent<HTMLInputElement>):void => setCnt(parseInt(e.target.value))}
+          onChange={(e:React.ChangeEvent<HTMLInputElement>):void => setCnt(parseInt(e.target.value)<1?10:parseInt(e.target.value))}
           placeholder='Enter a value'
           className="input2"
         />
